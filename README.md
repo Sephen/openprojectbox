@@ -1,7 +1,17 @@
 # What is Open Project Box?
-* It's a modular framework for creating all sizes permanent or semi permanent project boxes. By combining the panels you need e.g. cooling (fan panels), acces (door panels), info (panel meter/lcd panels) etc. You can create your own custom project boxes. And if you need to change your application... you can change your project box to.
+It's a modular framework for creating all sizes permanent or semi permanent project boxes. By combining the panels you need e.g. cooling (fan panels), acces (door panels), info (panel meter/lcd panels) etc. You can create your own custom project boxes. And if you need to change your application... you can change your project box to.
 
-Front and back panels (u6, u7, u8 and u9 are not shown)
+## Filenumbers
+1. First Character stands for the paneltype.
+  * p = front-/back panel
+  * s = side panel
+  * t = top panel
+  * b = bottom/floor panel
+2. Second character stands for the material thickness in mm.
+3. Third to sixt character stands for the frame width in mm.
+4. Last characters stands for the height in units (u01) one unit is 25mm or frame width in mm 
+
+##Front and back panels (u6, u7, u8 and u9 are not shown)
 
 | Nr.       | Height (mm) | width (mm) | Thickness (mm) | 
 |-----------|-------------|------------|----------------| 
@@ -37,8 +47,7 @@ Front and back panels (u6, u7, u8 and u9 are not shown)
 | p3x250u10 | (u10) 250mm | 286        | 3              | 
 
 
-
-Side Panels (u6, u7, u8 and u9 are not shown)
+##Side Panels (u6, u7, u8 and u9 are not shown)
 
 | Nr.       | Height (mm) | width (mm) | Thickness (mm) | 
 |-----------|-------------|------------|----------------| 
@@ -73,7 +82,7 @@ Side Panels (u6, u7, u8 and u9 are not shown)
 | s3x250u05 | (u5) 125mm  | 280        | 3              | 
 | s3x250u10 | (u10) 250mm | 280        | 3              | 
 
-Top Panels
+##Top Panels
 
 | Nr         | Alias      | Height (mm) | Width (mm) | Thickness (mm) | 
 |------------|------------|-------------|------------|----------------| 
@@ -93,7 +102,7 @@ Top Panels
 | t3x250y200 | t3x200y250 | 236         | 286        | 3              | 
 | t3x250y250 | na         | 286         | 286        | 3              | 
 
-Floor Panels (beta)
+##Floor Panels (beta)
 
 | Nr         | Alias      | Height (mm) | Width (mm) | Thickness (mm) | 
 |------------|------------|-------------|------------|----------------| 
