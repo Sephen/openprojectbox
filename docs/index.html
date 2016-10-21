@@ -1,0 +1,186 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+      https://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Open Project Box</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+	<style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <div class="opb-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="opb-title mdl-layout-title">
+            <img class="opb-logo-image" src="images/ospb-logo.png">
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="opb-header-spacer mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <div class="opb-navigation-container">
+            <nav class="opb-navigation mdl-navigation">
+              <!--a class="mdl-navigation__link mdl-typography--text-uppercase" href="">link</a-->
+              <a href="https://github.com/Sephen/opensourceprojectbox" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Github</a>
+            </nav>
+          </div>
+          <span class="opb-mobile-title mdl-layout-title">
+            <img class="opb-logo-image" src="images/ospb-logo.png">
+          </span>
+         
+        </div>
+      </div>
+
+      <div class="opb-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          <img class="opb-logo-image" src="images/ospb-logo-white.png">
+        </span>
+        <nav class="mdl-navigation">
+          <!--a class="mdl-navigation__link" href="">Link</a-->
+          <a href="https://github.com/Sephen/opensourceprojectbox" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Github</a>
+        </nav>
+      </div>
+
+      <div class="opb-content mdl-layout__content">
+        <a name="top"></a>
+        <div class="opb-be-together-section mdl-typography--text-center">
+          <div class="logo-font opb-slogan">Modular project box framework.</div>
+          <div class="opb-sub-slogan">Open Source framework for creating modular custom project boxes.</div>
+        </div>
+
+        <div class="opb-more-section">
+        <div class="opb-section-title mdl-typography--display-1-color-contrast">What is Open Project Box?</div>
+        <div class="opb-section-text mdl-typography--subhead-color-contrast">It's a modular framework for creating all sizes permanent or semi permanent project boxes. By combining the panels you need e.g. cooling (fan panels), acces (door panels), info (panel meter/lcd panels) etc. You can create your own custom project boxes. And if you need to change your application... you can change your project box to.</div>
+          <div class="opb-card-container mdl-grid">
+
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/hardware.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Hardware</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">The hardware used in Open Project Box has to be open source or widely available. The 15mm x 15mm aluminium Profiles that can be used are <a href="https://www.makerbeam.com/" target="_blank">Makerbeam</a>, <a href="http://www.openbeamusa.com/" target="_blank">Open beam</a> and the <a href="http://www.misumi-europe.com/en/catalog/vona2/detail/110300465870/?ProductCode=HFS3-1515" target="_blank">Misumi hfs3-1515</a>. Nuts and bolts are m3. <strong>In most cases only vertical beams are sufficient!</strong>
+                </span>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/beam.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Frame Sizes</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">There are 5 base lenghts for "a" (see image above): 50mm, 100mm, 150mm, 200mm and 250mm. Which are used for the frame height. The frame width is composed of simple function a + (2*15mm). The only thing to add is the material thickness.
+                </span>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/panels.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Panels</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">The height of the panels will be measured in units (1u = 25mm). In the first version the panels are based on 3mm acrylic sheets. But you can use any type of material for the panels. The complete list of panel sizes can be found in the <a href="#">github</a> repository <strong>(Work in Progress)</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="opb-more-section">
+          <div class="opb-card-container mdl-grid">
+            <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--6-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/hackaday.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Just to give you an idea</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Give your projects a vintage or industrial appearance. It can be used for all kinds of semi- or permanent installations</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="opb-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://hackaday.io/project/12104-panel-meter-moon-phase-clock" target="_blank">
+                   View on Hackaday
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--6-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/opbimg.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Contribute</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Because a lot still has to be done. For intstance creating all the base panels (svg, cad, collada, stl etc. files). Creating the modular panels. For instance button-, fan-, lcd-, door- panels etc. If people want to contribute to the project <a href="">
+                   contact me via Github</a>.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="opb-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--left-section">
+            </div>
+            <div class="mdl-mega-footer--right-section">
+              <a class="mdl-typography--font-light" href="#top">
+                Back to Top
+                <i class="material-icons">expand_less</i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mdl-mega-footer--middle-section">
+          </div>
+
+          <div class="mdl-mega-footer--bottom-section">
+            <!--a class="opb-link mdl-typography--font-light" href="">Blog</a>
+            <a class="opb-link mdl-typography--font-light" href="">Privacy Policy</a-->
+          </div>
+
+        </footer>
+      </div>
+    </div>
+	<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  </body>
+</html>

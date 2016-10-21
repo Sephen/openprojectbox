@@ -1,0 +1,552 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+body {
+  margin: 0;
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+  border: 0px;
+}
+
+::-moz-selection {
+  background-color: #ff4081;
+  color: #fff;
+}
+
+::selection {
+  background-color: #ff4081;
+  color: #fff;
+}
+
+.opb-search-box .mdl-textfield__input {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.opb-header .mdl-menu__container {
+  z-index: 50;
+  margin: 0 !important;
+}
+
+
+.mdl-textfield--expandable {
+  width: auto;
+}
+
+.opb-fab {
+  position: absolute;
+  right: 20%;
+  bottom: -26px;
+  z-index: 3;
+  background: #64ffda !important;
+  color: black !important;
+}
+
+.opb-mobile-title {
+  display: none !important;
+}
+
+
+.opb-logo-image {
+  height: 28px;
+  width: 182px;
+}
+
+
+.opb-header {
+  overflow: visible;
+  background-color: white;
+}
+
+  .opb-header .material-icons {
+    color: #767777 !important;
+  }
+
+  .opb-header .mdl-layout__drawer-button {
+    background: transparent;
+    color: #767777;
+  }
+
+  .opb-header .mdl-navigation__link {
+    color: #757575;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .opb-navigation-container {
+    /* Simple hack to make the overflow happen to the left instead... */
+    direction: rtl;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 500px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .opb-navigation {
+    /* ... and now make sure the content is actually LTR */
+    direction: ltr;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 800px;
+  }
+
+  .opb-search-box.is-focused + .opb-navigation-container {
+    opacity: 0;
+    width: 100px;
+  }
+
+
+  .opb-navigation .mdl-navigation__link {
+    display: inline-block;
+    height: 60px;
+    line-height: 68px;
+    background-color: transparent !important;
+    border-bottom: 4px solid transparent;
+  }
+
+    .opb-navigation .mdl-navigation__link:hover {
+      border-bottom: 4px solid #ff4081;
+    }
+
+  .opb-search-box {
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .opb-more-button {
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+
+.opb-drawer {
+  border-right: none;
+  width: 290px;
+  -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+}
+
+  .opb-drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+  }
+
+  .opb-drawer .mdl-navigation__link.mdl-navigation__link {
+    font-size: 14px;
+    color: #757575;
+  }
+
+  .opb-drawer span.mdl-navigation__link.mdl-navigation__link {
+    color: #ff4081;
+  }
+
+  .opb-drawer .mdl-layout-title {
+    position: relative;
+    background: #ff4081;
+    height: 160px;
+  }
+
+    .opb-drawer .opb-logo-image {
+      position: absolute;
+      bottom: 16px;
+    }
+
+.opb-be-together-section {
+  position: relative;
+  height: 800px;
+  width: auto;
+  background-color: #f3f3f3;
+  background: url('../images/mockup.jpg') center 30% no-repeat;
+  background-size: cover;
+}
+
+.logo-font {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color: #ff4081;
+  font-weight: 500;
+}
+
+.opb-slogan {
+  text-shadow: 0px 0px 10px #D9D8D4;
+  font-size: 60px;
+  padding-top: 160px;
+}
+
+.opb-sub-slogan {
+  text-shadow: 0px 0px 10px #D9D8D4;
+  font-size: 21px;
+  padding-top: 24px;
+}
+
+.opb-create-character {
+  font-size: 21px;
+  padding-top: 400px;
+}
+
+  .opb-create-character a {
+    text-decoration: none;
+    color: #767777;
+    font-weight: 300;
+  }
+
+.opb-screen-section {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.opb-screens {
+  text-align: right;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.opb-screen {
+  text-align: center;
+}
+
+.opb-screen .opb-link {
+  margin-top: 16px;
+  display: block;
+  z-index: 2;
+}
+
+.opb-image-link {
+  text-decoration: none;
+}
+
+.opb-wear {
+  display: inline-block;
+  width: 160px;
+  margin-right: 32px;
+}
+
+  .opb-wear .opb-screen-image {
+    width: 40%;
+    z-index: 1;
+  }
+
+
+.opb-phone {
+  display: inline-block;
+  width: 64px;
+  margin-right: 48px;
+}
+
+  .opb-phone .opb-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.opb-tablet {
+  display: inline-block;
+  width: 110px;
+  margin-right: 64px;
+}
+
+  .opb-tablet .opb-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .opb-tablet .opb-link {
+    display: block;
+    z-index: 2;
+  }
+
+
+.opb-tv {
+  display: inline-block;
+  width: 300px;
+  margin-right: 80px;
+}
+
+  .opb-tv .opb-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.opb-auto {
+  display: inline-block;
+  width: 300px;
+  overflow: hidden;
+}
+
+  .opb-auto .opb-screen-image {
+    display: block;
+    height: 300px;
+    z-index: 1;
+  }
+
+
+.opb-wear-section {
+  position: relative;
+  background: url('images/wear.png') center top no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.opb-wear-band {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #37474f;
+}
+
+.opb-wear-band-text {
+  max-width: 800px;
+  margin-left: 25%;
+  padding: 24px;
+  text-align: left;
+  color: white;
+}
+
+  .opb-wear-band-text p {
+    padding-top: 8px;
+  }
+
+.opb-link {
+  text-decoration: none;
+  color: #ff4081 !important;
+}
+
+  .opb-link:hover {
+    color: #7cb342 !important;
+  }
+
+  .opb-link .material-icons {
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+  }
+
+.opb-alt-link {
+  text-decoration: none;
+  color: #64ffda !important;
+  font-size: 16px;
+}
+
+  .opb-alt-link:hover {
+    color: #00bfa5 !important;
+  }
+
+  .opb-alt-link .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+.opb-customized-section {
+  text-align: center;
+}
+
+.opb-customized-section-text {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 16px 0 16px;
+}
+
+  .opb-customized-section-text p {
+    padding-top: 16px;
+  }
+
+.opb-customized-section-image {
+  background: url('/images/devices.jpg') center top no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.opb-more-section {
+  padding: 60px 30px;
+  max-width: 1044px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .opb-more-section .opb-section-title {
+    margin-left: 12px;
+    padding-bottom: 24px;
+  }
+
+    .opb-more-section .opb-section-text {
+    margin-left: 12px;
+    padding-bottom: 24px;
+  }
+
+.opb-card-container {
+}
+
+  .opb-card-container .mdl-card__media {
+    overflow: hidden;
+    background: transparent;
+  }
+
+    .opb-card-container .mdl-card__media img {
+      width: 100%;
+    }
+
+  .opb-card-container .mdl-card__title {
+    background: transparent;
+    height: auto;
+  }
+
+  .opb-card-container .mdl-card__title-text {
+    color: black;
+    height: auto;
+  }
+
+  .opb-card-container .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+    padding-bottom: 56px;
+  }
+
+  .opb-card-container .mdl-card__actions {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .opb-card-container .mdl-card__actions a {
+    border-top: none;
+    font-size: 16px;
+  }
+
+.opb-footer {
+  background-color: #fafafa;
+  position: relative;
+}
+
+  .opb-footer a:hover {
+    color: #ff4081;
+  }
+
+  .opb-footer .mdl-mega-footer--top-section::after {
+    border-bottom: none;
+  }
+
+  .opb-footer .mdl-mega-footer--middle-section::after {
+    border-bottom: none;
+  }
+
+  .opb-footer .mdl-mega-footer--bottom-section {
+    position: relative;
+  }
+
+  .opb-footer .mdl-mega-footer--bottom-section a {
+    margin-right: 2em;
+  }
+
+  .opb-footer .mdl-mega-footer--right-section a .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+
+.opb-link-menu:hover {
+  cursor: pointer;
+}
+
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .opb-navigation-container {
+    display: none;
+  }
+
+  .opb-title {
+    display: none !important;
+  }
+
+  .opb-mobile-title {
+    display: block !important;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 12px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
+     consecutive "+" operators in some cases. Therefore, we need to use both
+     here to cover all the bases. */
+  .android.opb-search-box.is-focused ~ .opb-mobile-title,
+  .opb-search-box.is-focused + .opb-navigation-container + .opb-mobile-title {
+    opacity: 0;
+  }
+
+  .opb-more-button {
+    display: none;
+  }
+
+  .opb-search-box.is-focused {
+    width: calc(100% - 48px);
+  }
+
+  .opb-search-box .mdl-textfield__expandable-holder {
+    width: 100%;
+  }
+
+  .opb-be-together-section {
+    height: 350px;
+  }
+
+  .opb-slogan {
+    font-size: 26px;
+    margin: 0 16px;
+    padding-top: 24px;
+  }
+
+  .opb-sub-slogan {
+    font-size: 16px;
+    margin: 0 16px;
+    padding-top: 8px;
+  }
+
+  .opb-create-character {
+    padding-top: 200px;
+    font-size: 16px;
+  }
+
+  .opb-create-character img {
+    height: 12px;
+  }
+
+  .opb-fab {
+    display: none;
+  }
+
+  .opb-wear-band-text {
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .opb-footer .mdl-mega-footer--bottom-section {
+    display: none;
+  }
+}
