@@ -13,7 +13,7 @@ It's a modular framework for creating all sizes permanent or semi permanent proj
 
 ##Front and back panels (u6, u7, u8 and u9 are not shown)
 
-| Nr.       | Height (mm) | width (mm) | Thickness (mm) | 
+| Id       | Height (mm) | width (mm) | Thickness (mm) | 
 |-----------|-------------|------------|----------------| 
 | p3x050u01 | (u1) 25mm   | 86         | 3              | 
 | p3x050u02 | (u2) 50mm   | 86         | 3              | 
@@ -49,7 +49,7 @@ It's a modular framework for creating all sizes permanent or semi permanent proj
 
 ##Side Panels (u6, u7, u8 and u9 are not shown)
 
-| Nr.       | Height (mm) | width (mm) | Thickness (mm) | 
+| Id       | Height (mm) | width (mm) | Thickness (mm) | 
 |-----------|-------------|------------|----------------| 
 | s3x050u01 | (u1) 25mm   | 80         | 3              | 
 | s3x050u02 | (u2) 50mm   | 80         | 3              | 
@@ -83,8 +83,9 @@ It's a modular framework for creating all sizes permanent or semi permanent proj
 | s3x250u10 | (u10) 250mm | 280        | 3              | 
 
 ##Top Panels
+Alias panels have the same dimensions as the Id in the same row only rotated 90 degrees. 
 
-| Nr         | Alias      | Height (mm) | Width (mm) | Thickness (mm) | 
+| Id         | Alias      | Height (mm) | Width (mm) | Thickness (mm) | 
 |------------|------------|-------------|------------|----------------| 
 | t3x050y050 | na         | 86          | 86         | 3              | 
 | t3x100y050 | t3x050y100 | 86          | 136        | 3              | 
@@ -102,9 +103,10 @@ It's a modular framework for creating all sizes permanent or semi permanent proj
 | t3x250y200 | t3x200y250 | 236         | 286        | 3              | 
 | t3x250y250 | na         | 286         | 286        | 3              | 
 
-##Floor Panels (beta)
+##Floor Panels (Under development)
+**! Note that these files are 1mm smaller on each side to create a better fit !**
 
-| Nr         | Alias      | Height (mm) | Width (mm) | Thickness (mm) | 
+| Id         | Alias      | Height (mm) | Width (mm) | Thickness (mm) | 
 |------------|------------|-------------|------------|----------------| 
 | b3x050y050 | na         | 78          | 78         | 3              | 
 | b3x100y050 | b3x050y100 | 78          | 128        | 3              | 
