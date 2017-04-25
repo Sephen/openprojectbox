@@ -1,5 +1,5 @@
 # What is Open Project Box?
-It's a modular framework for creating all sizes permanent or semi permanent project boxes. By combining the panels you need e.g. cooling (fan panels), acces (door panels), info (panel meter/lcd panels) etc. You can create your own custom project boxes. And if you need to change your application... you can change your project box to.
+It's a modular framework for creating all sizes permanent or semi permanent project boxes. By combining the panels you need e.g. cooling (fan panels), access (door panels), info (panel meter/lcd panels) etc. You can create your own custom project boxes. And if you need to change your applicationk... you can change your project box too.
 
 ## Filenumbers
 1. First Character stands for the paneltype.
